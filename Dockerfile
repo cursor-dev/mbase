@@ -17,3 +17,7 @@ RUN apt-get -y autoremove && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
+
+# Create media user / group.
+RUN groupadd -g 4001 media
+RUN useradd -u 4001 -g 4001 media
