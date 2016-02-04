@@ -9,7 +9,7 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     apt-get -q update && \
     apt-get -qy --force-yes dist-upgrade && \
     apt-get install -qy --force-yes \
-    git-core ca-certificates curl openssl xmlstarlet curl sudo \
+    git-core ca-certificates curl python-lxml openssl xmlstarlet curl sudo \
     python-software-properties
 
 # Clean-up tasks
