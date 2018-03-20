@@ -10,7 +10,7 @@ RUN echo "force-unsafe-io" > /etc/dpkg/dpkg.cfg.d/02apt-speedup &&\
     apt-get -qy --force-yes dist-upgrade && \
     apt-get install -qy --force-yes \
     git-core ca-certificates curl python-lxml openssl xmlstarlet curl sudo \
-    python-software-properties
+    software-properties-common
 
 # Clean-up tasks
 RUN apt-get -y autoremove && \
